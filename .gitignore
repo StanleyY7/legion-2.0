@@ -132,7 +132,13 @@ dist
 # Secrets and env values
 .secrets
 .env
+
+# Playwright files and folders
 /test-results/
+/tests-examples/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# CSS files
+*.css*
