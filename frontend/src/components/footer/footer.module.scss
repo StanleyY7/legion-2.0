@@ -1,0 +1,26 @@
+.footerContainer {
+  height: 450px;
+  width: 100%;
+  background-color: navy;
+  position: fixed;
+  bottom: 0;
+}
+
+.contactSectionContainer {
+  display: flex;
+}
+
+.subFooterContainer {
+  width: 90%;
+  height: 22px;
+  align-items: center;
+  padding: 4px;
+  background-color: gray;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 25px;
+  right: 100px;
+  > p {
+    font-weight: bold;
+  }
+}
