@@ -1,26 +1,25 @@
 .footerContainer {
-  height: 450px;
-  width: 100%;
   background-color: navy;
-  position: fixed;
-  bottom: 0;
-}
+  height: 450px;
+  padding-bottom: 24px;
+  width: 100%;
 
-.contactSectionContainer {
-  display: flex;
-}
+  .contactSectionContainer {
+    height: 400px;
+  }
 
-.subFooterContainer {
-  width: 90%;
-  height: 22px;
-  align-items: center;
-  padding: 4px;
-  background-color: gray;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 25px;
-  right: 100px;
-  > p {
-    font-weight: bold;
+  .subFooterContainer {
+    align-items: center;
+    background-color: gray;
+    border-radius: 4px;
+    display: flex;
+    height: 28px;
+    margin: auto;
+    padding: 6px 4px;
+    width: 70%;
+
+    > p {
+      font-weight: bolder;
+    }
   }
 }

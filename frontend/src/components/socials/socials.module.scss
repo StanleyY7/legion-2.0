@@ -1,0 +1,11 @@
+.socialsContainer {
+  background-color: navy;
+  display: flex;
+  height: 550px;
+  width: 100%;
+
+  .socialsTxtContainer {
+    display: flex;
+    text-align: center;
+  }
+}
