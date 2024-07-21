@@ -4,11 +4,11 @@ function Socials() {
   return (
     <>
       <div className={styles.socialsContainer}>
-        <div className={styles.socialsImgContainer}>
-          <img></img>
-        </div>
+        <div className={styles.socialsImgContainer}></div>
         <div className={styles.socialsTxtContainer}>
-          <p>Join the Legion.</p>
+          <a href="https://www.instagram.com/" target="_blank">
+            <p>Join the Legion.</p>
+          </a>
         </div>
       </div>
     </>

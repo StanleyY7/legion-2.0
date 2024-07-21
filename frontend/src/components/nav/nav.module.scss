@@ -1,9 +1,13 @@
+@import "../../global.module.scss";
+
 .navContainer {
   .navList {
     align-items: center;
     display: flex;
     height: 50px;
     > li {
+      color: $secondary_color;
+      cursor: default;
       font-size: 16px;
       list-style: none;
       padding: 0px 6px;

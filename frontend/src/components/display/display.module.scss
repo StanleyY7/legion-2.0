@@ -1,5 +1,7 @@
+@import "../../global.module.scss";
+
 .displayContainer {
-  background-color: aqua;
+  background-color: $secondary_color;
   height: 650px;
   width: 100%;
 }

@@ -1,11 +1,80 @@
+@import "../../global.module.scss";
+
 .socialsContainer {
-  background-color: navy;
+  background-color: $main_color;
+  color: $secondary_color;
   display: flex;
-  height: 550px;
+  height: 650px;
   width: 100%;
 
+  .socialsImgContainer {
+    background-image: url("../../assets/socialsIMG.svg");
+    background-position: 50% 15%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+  }
+
   .socialsTxtContainer {
+    align-items: center;
     display: flex;
-    text-align: center;
+    font-size: 3.5rem;
+    height: 100%;
+    justify-content: center;
+    width: 90%;
+
+    > a {
+      color: $secondary_color;
+      text-decoration: none;
+      > p {
+        cursor: default;
+      }
+
+      > p:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: $third_color;
+        transition: 0.45s ease-in;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .socialsContainer {
+    height: 125px;
+
+    .socialsTxtContainer {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 550px) {
+  .socialsContainer {
+    height: 180px;
+
+    .socialsTxtContainer {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 900px) {
+  .socialsContainer {
+    height: 275px;
+    .socialsTxtContainer {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+  .socialsContainer {
+    height: 450px;
+    .socialsTxtContainer {
+      font-size: 3rem;
+    }
   }
 }

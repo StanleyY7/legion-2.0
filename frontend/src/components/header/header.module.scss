@@ -1,15 +1,19 @@
+@import "../../global.module.scss";
+
 .headerContainer {
   height: 56px;
   width: 100%;
 
   .topHeader {
-    background-color: gray;
+    background-color: $third_color;
+    cursor: default;
+    font-weight: bolder;
     padding: 3px;
     text-align: center;
   }
 
   .mainHeader {
-    background-color: navy;
+    background-color: $main_color;
     height: 100%;
   }
 }
