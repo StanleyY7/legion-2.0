@@ -7,6 +7,46 @@
 
   .contactSectionContainer {
     height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .footerLinksContainer {
+      width: 75%;
+      height: 325px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $secondary_color;
+
+      p {
+        font-size: 24px;
+        padding-bottom: 12px;
+      }
+
+      > div {
+        cursor: default;
+        padding: 0px 15px;
+        height: 100px;
+        > ul {
+          > li {
+            font-size: 16px;
+            cursor: pointer;
+            padding: 8px 0px;
+          }
+        }
+      }
+    }
+
+    .footerLogoContainer {
+      background-image: url("../../assets/legionSmallLogo.png");
+      background-repeat: no-repeat;
+      background-size: 350px;
+      background-position: 15% 50%;
+      width: 55%;
+      height: 100%;
+      filter: brightness(135%);
+    }
   }
 
   .subFooterContainer {
@@ -21,6 +61,74 @@
 
     > p {
       font-weight: bolder;
+    }
+  }
+
+  .paymentMethodContainer {
+    display: flex;
+    height: 28px;
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+.subFooterTxtAlt {
+  display: none;
+}
+
+@media only screen and (max-width: 850px) {
+  .footerContainer {
+    .contactSectionContainer {
+      display: block !important;
+      width: 100%;
+    }
+
+    .footerLinksContainer {
+      font-size: 10px;
+      width: 100%;
+      margin: auto;
+    }
+
+    .footerLogoContainer {
+      display: none;
+    }
+
+    .subFooterContainer {
+      .subFooterTxtAlt {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+
+      .subFooterTxtMain {
+        display: none;
+      }
+    }
+
+    .paymentMethodContainer {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1100px) {
+  .footerContainer {
+    .contactSectionContainer {
+      width: 100%;
+    }
+
+    .footerLinksContainer {
+      font-size: 10px;
+      width: 100%;
+    }
+
+    .footerLogoContainer {
+      background-size: 50px;
     }
   }
 }
