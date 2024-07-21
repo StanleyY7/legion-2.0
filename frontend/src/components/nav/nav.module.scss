@@ -5,6 +5,7 @@
     align-items: center;
     display: flex;
     height: 50px;
+
     > li {
       color: $secondary_color;
       cursor: default;
@@ -12,5 +13,53 @@
       list-style: none;
       padding: 0px 6px;
     }
+
+    > li:hover {
+      cursor: pointer;
+      transition: 0.75s ease;
+      text-decoration: underline;
+    }
+  }
+}
+
+.navLogo {
+  font-size: 24px !important;
+  font-weight: bold;
+  margin-bottom: 4px;
+  padding: 0px 9px !important;
+  text-decoration: none !important;
+}
+
+@media only screen and (max-width: 400px) {
+  .navContainer {
+    height: 50px;
+    .navList {
+      > li {
+        display: none;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .navLogo {
+    display: block !important;
+    font-size: 18px !important;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+  .navContainer {
+    .navList {
+      > li {
+        display: none;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .navLogo {
+    display: block !important;
+    font-size: 20px !important;
   }
 }

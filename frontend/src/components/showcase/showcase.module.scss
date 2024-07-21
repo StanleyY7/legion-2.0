@@ -1,8 +1,40 @@
 @import "../../global.module.scss";
 
 .showcaseContainer {
-  background-color: red;
-  height: 400px;
-  margin-top: 20px;
+  bottom: 25px;
+  background-image: url("../../assets/showcase/showcase1.svg");
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 525px;
+  position: relative;
   width: 100%;
+}
+
+@media only screen and (max-width: 300px) {
+  .showcaseContainer {
+    bottom: 85px;
+    margin-bottom: -200px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 425px) {
+  .showcaseContainer {
+    bottom: 65px;
+    margin-bottom: -200px;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 525px) {
+  .showcaseContainer {
+    bottom: 65px;
+    margin-bottom: -150px;
+  }
+}
+
+@media only screen and (min-width: 525px) and (max-width: 700px) {
+  .showcaseContainer {
+    bottom: 65px;
+    margin-bottom: -100px;
+  }
 }

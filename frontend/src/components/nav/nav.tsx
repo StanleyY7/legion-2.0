@@ -5,7 +5,7 @@ function Nav() {
     <>
       <div className={styles.navContainer}>
         <ul className={styles.navList}>
-          <li>Legion</li>
+          <li className={styles.navLogo}>Legion</li>
           <li>Kit</li>
           <li>About</li>
           <li>Contact</li>
