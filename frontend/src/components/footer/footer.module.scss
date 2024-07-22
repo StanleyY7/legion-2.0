@@ -23,12 +23,12 @@
     justify-content: center;
 
     .footerLinksContainer {
-      width: 100%;
-      height: 325px;
-      display: flex;
-      justify-content: center;
       align-items: center;
       color: $secondary_color;
+      display: flex;
+      height: 325px;
+      justify-content: center;
+      width: 100%;
 
       p {
         font-size: 26px;
@@ -37,8 +37,8 @@
 
       > div {
         cursor: default;
-        padding: 0px 22px;
         height: 100px;
+        padding: 0px 22px;
         > ul {
           > li {
             font-size: 18px;
@@ -50,9 +50,9 @@
 
     .footerLogoContainer {
       background-image: url("../../assets/legionSmallLogo.png");
+      background-position: 15% 50%;
       background-repeat: no-repeat;
       background-size: 345px;
-      background-position: 15% 50%;
       filter: brightness(135%);
       height: 100%;
       width: 58%;
@@ -78,8 +78,8 @@
     display: flex;
     height: 28px;
     margin: auto;
-    width: 90%;
     overflow: hidden;
+    width: 90%;
 
     > img:hover {
       transition: 0.5s ease;
@@ -105,8 +105,8 @@ ul {
 
     .footerLinksContainer {
       font-size: 10px;
-      width: 100%;
       margin: auto;
+      width: 100%;
     }
 
     .footerLogoContainer {
@@ -116,8 +116,8 @@ ul {
     .subFooterContainer {
       .subFooterTxtAlt {
         display: block;
-        width: 100%;
         text-align: center;
+        width: 100%;
       }
 
       .subFooterTxtMain {

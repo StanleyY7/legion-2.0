@@ -6,16 +6,13 @@
 $main_color: #151f28;
 $secondary_color: #ffffff;
 $third_color: #c5c5c5;
-$border_color: #f1f1f1;
-$link_color: #425281;
-$input_borderColor: #747882;
 
 // Fonts
 $main_font: "helvetica";
 
 // Global Styles
 * {
+  font-family: $main_font;
   margin: 0;
   padding: 0;
-  font-family: $main_font;
 }

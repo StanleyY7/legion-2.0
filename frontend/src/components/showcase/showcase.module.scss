@@ -1,11 +1,11 @@
 @import "../../global.module.scss";
 
 .showcaseContainer {
-  bottom: 25px;
   background-image: url("../../assets/showcase/showcase1.svg");
   background-position: 50% 40%;
   background-repeat: no-repeat;
   background-size: 100%;
+  bottom: 25px;
   height: 525px;
   position: relative;
   width: 100%;
