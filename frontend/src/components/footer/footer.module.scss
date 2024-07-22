@@ -5,6 +5,17 @@
   height: 650px;
   width: 100%;
 
+  a {
+    color: $secondary_color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    transition: 0.5s ease;
+    text-decoration: underline;
+    text-decoration-color: $third_color;
+  }
+
   .contactSectionContainer {
     height: 550px;
     width: 100%;
@@ -12,7 +23,7 @@
     justify-content: center;
 
     .footerLinksContainer {
-      width: 75%;
+      width: 100%;
       height: 325px;
       display: flex;
       justify-content: center;
@@ -20,18 +31,17 @@
       color: $secondary_color;
 
       p {
-        font-size: 24px;
+        font-size: 26px;
         padding-bottom: 12px;
       }
 
       > div {
         cursor: default;
-        padding: 0px 15px;
+        padding: 0px 22px;
         height: 100px;
         > ul {
           > li {
-            font-size: 16px;
-            cursor: pointer;
+            font-size: 18px;
             padding: 8px 0px;
           }
         }
@@ -41,11 +51,11 @@
     .footerLogoContainer {
       background-image: url("../../assets/legionSmallLogo.png");
       background-repeat: no-repeat;
-      background-size: 350px;
+      background-size: 345px;
       background-position: 15% 50%;
-      width: 55%;
-      height: 100%;
       filter: brightness(135%);
+      height: 100%;
+      width: 58%;
     }
   }
 
@@ -70,6 +80,11 @@
     margin: auto;
     width: 90%;
     overflow: hidden;
+
+    > img:hover {
+      transition: 0.5s ease;
+      transform: scale(1.025);
+    }
   }
 }
 

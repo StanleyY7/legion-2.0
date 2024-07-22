@@ -26,26 +26,42 @@ function Footer() {
           <div>
             <p>Need Help?</p>
             <ul>
-              <li>Size Guide</li>
-              <li>Return Policy</li>
-              <li>Refund Policy</li>
-              <li>About Us</li>
+              <li>
+                <a href="https://google.com.au">Size Guide</a>
+              </li>
+              <li>
+                <a href="https://google.com.au">Return Policy</a>
+              </li>
+              <li>
+                <a href="https://google.com.au">Refund Policy</a>
+              </li>
+              <li>
+                <a href="https://google.com.au">About Us</a>
+              </li>
             </ul>
           </div>
 
           <div>
             <p>Explore</p>
             <ul>
-              <li>Our Brands</li>
-              <li>Charity</li>
+              <li>
+                <a href="https://google.com.au">Our Brands</a>
+              </li>
+              <li>
+                <a href="https://google.com.au">Charity</a>
+              </li>
             </ul>
           </div>
 
           <div>
             <p>Contact Us</p>
             <ul>
-              <li>LinkedIn</li>
-              <li>Github</li>
+              <li>
+                <a href="https://google.com.au">LinkedIn</a>
+              </li>
+              <li>
+                <a href="https://google.com.au">Github</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -53,7 +69,7 @@ function Footer() {
       </div>
       <div className={styles.subFooterContainer}>
         <p className={styles.subFooterTxtMain}>We Accept: </p>
-        <p className={styles.subFooterTxtAlt}>Thank you for visiting Legion.</p>
+        <p className={styles.subFooterTxtAlt}>Payments Accepted: HERE 😎</p>
         <div className={styles.paymentMethodContainer}>
           {footerImages.map((footerImage: FooterImageType) => {
             return (
