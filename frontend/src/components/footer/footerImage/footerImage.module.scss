@@ -1,5 +1,19 @@
-.footerImg {
-  height: 50px;
-  padding: 0px 32px;
-  width: 50px;
+.footerImgContainer {
+  align-items: center;
+  display: flex;
+  height: 100%;
+
+  .footerImg {
+    filter: brightness(75%);
+    filter: grayscale(100%);
+    height: 50px;
+    padding: 0px 32px;
+    transition: 0.75s ease-in-out;
+    width: 50px;
+  }
+
+  .footerImg:hover {
+    filter: brightness(100%);
+    filter: grayscale(0%);
+  }
 }

@@ -1,13 +1,13 @@
 import styles from "./footerImage.module.scss";
 
 function FooterImage({ footerImage }: any) {
+  const { source, altText } = footerImage;
+
   return (
     <>
-      <img
-        className={styles.footerImg}
-        src={footerImage.source}
-        alt={footerImage.altText}
-      ></img>
+      <div className={styles.footerImgContainer}>
+        <img className={styles.footerImg} src={source} alt={altText}></img>
+      </div>
     </>
   );
 }

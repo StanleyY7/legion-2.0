@@ -1,5 +1,15 @@
-import styles from "./footer.module.scss";
+import amexImg from "../../assets/paymentMethods/amex.svg";
+import appleImg from "../../assets/paymentMethods/apple.svg";
+import giftcardImg from "../../assets/paymentMethods/gift-card.svg";
+import googleImg from "../../assets/paymentMethods/google-pay.svg";
+import klarnaImg from "../../assets/paymentMethods/klarna.svg";
+import mastercardImg from "../../assets/paymentMethods/mastercard.svg";
+import paypalImg from "../../assets/paymentMethods/paypal.svg";
+import stripeImg from "../../assets/paymentMethods/stripe.svg";
+import visaImg from "../../assets/paymentMethods/visa.svg";
+
 import FooterImage from "./footerImage/footerImage";
+import styles from "./footer.module.scss";
 
 export type FooterImageType = {
   id: string;
@@ -9,15 +19,15 @@ export type FooterImageType = {
 
 function Footer() {
   const footerImages = [
-    { id: "1", source: "", altText: "Visa" },
-    { id: "2", source: "", altText: "MasterCard" },
-    { id: "3", source: "", altText: "Amex" },
-    { id: "4", source: "", altText: "Paypal" },
-    { id: "5", source: "", altText: "Paypal" },
-    { id: "6", source: "", altText: "Paypal" },
-    { id: "7", source: "", altText: "Paypal" },
-    { id: "8", source: "", altText: "Paypal" },
-    { id: "9", source: "", altText: "Paypal" },
+    { id: "1", source: visaImg, altText: "Visa" },
+    { id: "2", source: mastercardImg, altText: "MasterCard" },
+    { id: "3", source: amexImg, altText: "Amex" },
+    { id: "4", source: stripeImg, altText: "Stripe" },
+    { id: "5", source: paypalImg, altText: "Paypal" },
+    { id: "6", source: giftcardImg, altText: "Gift" },
+    { id: "7", source: appleImg, altText: "Apple" },
+    { id: "8", source: googleImg, altText: "Google" },
+    { id: "9", source: klarnaImg, altText: "Klarna" },
   ];
   return (
     <div className={styles.footerContainer}>

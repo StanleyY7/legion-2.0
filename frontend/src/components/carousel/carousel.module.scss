@@ -41,8 +41,8 @@
     width: 100%;
 
     .carouselItemContainer {
-      border: 0.1rem solid black;
-      border-radius: 1rem;
+      border: 0.15rem groove $third_color;
+      border-radius: 1.25rem;
       padding: 15px 1px;
       transition: 1s ease-in-out;
       p {
@@ -58,6 +58,7 @@
     }
 
     .carouselItemContainer:hover {
+      border: 0.15rem groove $main_color;
       transform: scale(1.0125);
     }
   }

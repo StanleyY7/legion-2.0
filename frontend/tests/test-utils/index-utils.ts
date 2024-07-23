@@ -12,6 +12,8 @@ export const verifyHeaderExists = async (page: Page) => {
   await expect(page.getByRole("link", { name: "Legion." })).toBeVisible();
   await expect(page.getByRole("link", { name: "Kit" })).toBeVisible();
   await expect(page.getByRole("link", { name: "About" })).toBeVisible();
+  //await expect(page.getByRole("link", { name: "Contact" })).toBeVisible();
+  //await expect(page.getByRole("link", { name: "Login" })).toBeVisible();
 };
 
 export const verifyShowcase = async (page: Page) => {
