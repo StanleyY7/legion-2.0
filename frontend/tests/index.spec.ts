@@ -20,7 +20,7 @@ test.describe("Index Page Unit Tests", () => {
     await verifyHeaderExists(page);
   });
 
-  test.skip("Showcase component renders", async ({ page }) => {
+  test("Showcase component renders", async ({ page }) => {
     await verifyShowcase(page);
   });
 
